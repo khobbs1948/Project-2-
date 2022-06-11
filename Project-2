@@ -1,0 +1,21 @@
+Create table mass_shooting (
+state varchar(30) not null,
+year varchar(30) not null,
+shooting int
+);
+
+
+Create table regulations (
+state varchar(30) not null,
+year varchar(30) not null,
+gun_regulations int
+);
+
+
+Select * from mass_shooting;
+
+Select * from regulations
+
+
+
+
