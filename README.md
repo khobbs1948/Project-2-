@@ -1,6 +1,6 @@
 Project 2:
 Extract, Transform, and Load
-The US has witnessed several mass shootings. With recent news of yet another two mass shootings in the past month and much debate ongoing on gun regulations at a state and national level, the team decided to set up a data set that could merge mass shooting data by state and year with the number of gun regulations in that state in the corresponding year. 
+The US has witnessed several mass shootings. With recent news of yet another two mass shootings in the past month and much debate ongoing on gun regulations at a state and national level, the team decided to set up a data set exploring mass shooting data and corresponding gun regulations by state and year.
 
 Proposal:
 
@@ -15,7 +15,7 @@ This data set shows the location, date, and other details about every mass shoot
 Firearm Provisions in US States shows a list of firearm provisions across the 50 states by year. (1991-2017)
 The provisions are recorded for each year.
 
-Final production database is in PostgreSQL, a relational database.
+The final database is in PostgreSQL, a relational database.
 
 The objective of the data engineering project is to combine the data to potentially analyze relationships between the following:
 Gun regulations and subsequent levels of mass shootings in each state
