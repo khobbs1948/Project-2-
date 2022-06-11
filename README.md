@@ -28,13 +28,13 @@ Transform data
 (1) US Mass Shooting data lists the location as "city,state" of the mass shooting. Parse out state into a separate column and remove spaces before the "state" name. Create an additional column, the cumulative sum of shootings per state over time. Extract desired columns, the state, year, and a unique summary. Use the groupby function to determine the number of mass shootings by state and year. 
 
 (2)Firearm provisions data lists each provision as a column with identifying boolean values (1 or 0) to indicate if the state has the provision or not. The total number of provisions for the state is totaled in a final column. 
-Extract desired columns: state, year, and number of total gun regulations
+Extract desired columns, the state, year, and number of total gun regulations
 
 The team created two data tables from the dataset. 
-A first table, mass_shooting_outer, was created through an outer join to merge the mass shooting data with the number of gun regulations present per state.
+A first table, mass_shootings_outer, was created through an outer join to merge the mass shooting data with the number of gun regulations present per state.
 This was completed in jupyter notebook under the dataframe name "df". This table consists of all years of data in the table, even though corresponding firearm provision data was not available from the periods of 1982-1990 and 2018-2022.
 
-A second table, mass_shooting_inner, was created through an inner join to merge the mass shooting data with the number of gun regulations present per state.
+A second table, mass_shootings_inner, was created through an inner join to merge the mass shooting data with the number of gun regulations present per state.
 This was also completed in jupyter notebook under the dataframe name "df_cleaned". The table is the overlap between the mass shooting data set and the gun regulations, so it consists of the total gun regulations only where there was a mass shooting. 
 Therefore, data is shown only from 1991-2017, where both datasets had data.
 
