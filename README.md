@@ -15,7 +15,7 @@ This data set shows the location, date, and other details about every mass shoot
 Firearm Provisions in US States shows a list of firearm provisions across the 50 states by year. (1991-2017)
 The provisions are recorded for each year.
 
-The final database is in PostgreSQL, a relational database.
+The final database is in PostgreSQL, a relational database and consists of two data tables.
 
 The objective of the data engineering project is to combine the data to potentially analyze relationships between the following:
 Gun regulations and subsequent levels of mass shootings in each state
@@ -30,8 +30,13 @@ Transform data
 (2)Firearm provisions data lists each provision as a column with identifying boolean values (1 or 0) to indicate if the state has the provision or not. The total number of provisions for the state is totaled in a final column. 
 Extract desired columns: state, year, and number of total gun regulations
 
-Perform an outer join to merge the mass shooting data with the number of gun regulations present per state.
-This was completed in jupyter notebook, but could have also been done in SQL. As data engineers, we chose to leave all years of data in the table, even though corresponding firearm provision data was not available from the periods of 1982-1990 and 2018-2022.
+The team created two data tables from the dataset. 
+A first table, mass_shooting_outer, was created through an outer join to merge the mass shooting data with the number of gun regulations present per state.
+This was completed in jupyter notebook under the dataframe name "df". This table consists of all years of data in the table, even though corresponding firearm provision data was not available from the periods of 1982-1990 and 2018-2022.
+
+A second table, mass_shooting_inner, was created through an inner join to merge the mass shooting data with the number of gun regulations present per state.
+This was also completed in jupyter notebook under the dataframe name "df_cleaned". The table is the overlap between the mass shooting data set and the gun regulations, so it consists of the total gun regulations only where there was a mass shooting. 
+Therefore, data is shown only from 1991-2017, where both datasets had data.
 
 Load data
 -------------
