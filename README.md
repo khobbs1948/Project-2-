@@ -22,10 +22,10 @@ The provisions are recorded for each year.
 The final database is in PostgreSQL, even though the data is a non-relational database. The database consists of two data tables.
 
 The objective of the data engineering project is to combine the data to potentially analyze relationships between the following:
-    * Gun regulations and subsequent levels of mass shootings in each state
-    * Mass shootings and subsequent gun regulations in each state or surrounding state
-    * Number of mass shootings and the number of gun regulations over time in each state
-    * Trend in gun regulations and mass shootings over time in each state
+* Gun regulations and subsequent levels of mass shootings in each state
+* Mass shootings and subsequent gun regulations in each state or surrounding state
+* Number of mass shootings and the number of gun regulations over time in each state
+* Trend in gun regulations and mass shootings over time in each state
 
 Transform data
 --------------
