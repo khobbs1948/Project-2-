@@ -1,3 +1,4 @@
+drop table mass_shootings
 -- Create Table
 CREATE TABLE mass_shootings(
 index INT PRIMARY KEY,  
@@ -8,4 +9,4 @@ lawtotal INT,
 state_cumulative_shootings INT
 );
 
-select * from mass_shootings
+select*from mass_shootings
