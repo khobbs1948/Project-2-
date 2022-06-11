@@ -1,5 +1,9 @@
 Project 2:
 Extract, Transform, and Load
+
+Refer to Google Drive Link for the Project Report:
+https://docs.google.com/document/d/1tavouCSjbmutTF5BJruIODiwMUoyhx4A5K5GHhWtyto/edit?usp=sharing
+
 The US has witnessed several mass shootings. With recent news of yet another two mass shootings in the past month and much debate ongoing on gun regulations at a state and national level, the team decided to set up a data set exploring mass shooting data and corresponding gun regulations by state and year.
 
 Proposal:
@@ -15,7 +19,7 @@ This data set shows the location, date, and other details about every mass shoot
 Firearm Provisions in US States shows a list of firearm provisions across the 50 states by year. (1991-2017)
 The provisions are recorded for each year.
 
-The final database is in PostgreSQL, a relational database and consists of two data tables.
+The final database is in PostgreSQL, even though the data is a non-relational database. The database consists of two data tables.
 
 The objective of the data engineering project is to combine the data to potentially analyze relationships between the following:
 Gun regulations and subsequent levels of mass shootings in each state
@@ -41,5 +45,5 @@ Therefore, data is shown only from 1991-2017, where both datasets had data.
 Load data
 -------------
 Create a connection to the PostgreSQL database.
-Create two tables, mass_shootings_outer and mass_shootings_inner, to prepare loading the dataframe into SQL.
+The final database is called mass_shootings_db. Within the database are two tables, mass_shootings_outer and mass_shootings_inner.
 Load the data and check that all data is there and looks correctly merged.
