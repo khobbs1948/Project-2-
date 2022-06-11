@@ -36,6 +36,5 @@ This was completed in jupyter notebook, but could have also been done in SQL. As
 Load data
 -------------
 Create a connection to the PostgreSQL database.
-Create the table, mass_shootings, to prepare loading the dataframe into SQL.
+Create two tables, mass_shootings_outer and mass_shootings_inner, to prepare loading the dataframe into SQL.
 Load the data and check that all data is there and looks correctly merged.
-
