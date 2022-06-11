@@ -1,7 +1,9 @@
 Project 2:
 Extract, Transform, and Load
+The US has witnessed several mass shootings. With recent news of yet another two mass shootings in the past month and much debate ongoing on gun regulations at a state and national level, the team decided to set up a data set that could merge mass shooting data by state and year with the number of gun regulations in that state in the corresponding year. 
 
 Proposal:
+
 Extract data from two csv files on mass shootings and gun regulations by state and year.
 ------------
 Sources of data
@@ -15,11 +17,11 @@ The provisions are recorded for each year.
 
 Final production database is in PostgreSQL, a relational database.
 
-The objective of the data engineering project is to combine the data to potentially analyze several questions: Is there a relationship between the following:
+The objective of the data engineering project is to combine the data to potentially analyze relationships between the following:
 Gun regulations and subsequent levels of mass shootings in each state
 Mass shootings and subsequent gun regulations in each state or surrounding state
 Number of mass shootings and the number of gun regulations over time in each state
-Trend in gun regulations and mass shootings over time in each state.
+Trend in gun regulations and mass shootings over time in each state
 
 Transform data
 --------------
@@ -29,7 +31,7 @@ Transform data
 Extract desired columns: state, year, and number of total gun regulations
 
 Perform an outer join to merge the mass shooting data with the number of gun regulations present per state.
-This was completed in jupyter notebook, but could have also been done in SQL.
+This was completed in jupyter notebook, but could have also been done in SQL. As data engineers, we chose to leave all years of data in the table, even though corresponding firearm provision data was not available from the periods of 1982-1990 and 2018-2022.
 
 Load data
 -------------
